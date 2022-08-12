@@ -2,6 +2,8 @@ plugins {
     id("application")
 }
 
+application.mainClass.set("jnr.WinApi")
+
 dependencies {
     implementation("com.github.jnr:jnr-ffi:2.2.12")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")

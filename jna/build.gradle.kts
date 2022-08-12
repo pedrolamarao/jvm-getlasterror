@@ -2,6 +2,8 @@ plugins {
     id("application")
 }
 
+application.mainClass.set("jna.WinApi")
+
 dependencies {
     implementation("net.java.dev.jna:jna:5.12.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
