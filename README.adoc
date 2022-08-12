@@ -1,0 +1,5 @@
+= jvm-getlastderror
+
+These are support programs for the discussion titled "GetLastError() (with and without debugger)" in panama-dev mailing list.
+
+Intellij should be able to understand and build this project with "Project SDK" set to a JDK 19 EA build.
