@@ -17,7 +17,9 @@ public class WinApi
 
     static final Kernel32 kernel32 = LibraryLoader.create(Kernel32.class).load("kernel32");
 
-    static final Pointer INVALID_HANDLE_VALUE = Pointer.newIntPointer(jnr.ffi.Runtime.getRuntime(kernel32),0);
+    static final jnr.ffi.Runtime runtime = jnr.ffi.Runtime.getRuntime(kernel32);
+
+    static final Pointer INVALID_HANDLE_VALUE = Pointer.newIntPointer(runtime, runtime.addressSize() == 8 ? -1 : 0xFFFFFFFFL);
 
     public static void main (String[] args)
     {
