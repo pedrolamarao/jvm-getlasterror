@@ -6,5 +6,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "jvm-getlasterror"
 
-include("panama")
 include("jna")
+include("jnr")
+include("panama")
