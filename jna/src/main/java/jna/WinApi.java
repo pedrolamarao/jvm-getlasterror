@@ -1,4 +1,4 @@
-package panama;
+package jna;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;

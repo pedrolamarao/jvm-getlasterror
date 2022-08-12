@@ -1,8 +1,6 @@
 plugins {
-    id("java-library")
+    id("application")
 }
-
-java.toolchain.languageVersion.set( JavaLanguageVersion.of(19) )
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
